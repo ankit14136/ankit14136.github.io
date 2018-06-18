@@ -2,8 +2,7 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 var el = document.querySelectorAll("li");
-
-
+ 
 
 ul.addEventListener("click",function(event){
 	var element = event.target.parentElement;
