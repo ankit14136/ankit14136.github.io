@@ -1,5 +1,4 @@
 
-
 .navbar-left img {
     height: auto;
     width: auto;
@@ -8,8 +7,6 @@
 }
 
 .page-header-image {
-	top: 0;
-	left: 0;
 	filter: grayscale(70%);
 }
 
@@ -24,7 +21,7 @@
     word-spacing: 5px;
 }
 
-.brand button {
+#subscribe {
 	color: white;
 	background: transparent;
 	border: 2px solid white;
@@ -35,17 +32,17 @@
 	word-spacing: 1px;
 }
 
-.brand button:visited {
+#subscribe:visited {
       background-color: #6eaecc;
       color: white;
       border: 3px solid #6eaecc;
  }
- .brand button:hover {
+#subscribe:hover {
  	  background-color: #6eaecc;
       color: white;
       border: 3px solid #6eaecc;
  }
- .brand button:active {
+#subscribe:active {
       background-color: #6eaecc;
       color: white;
       border: 3px solid #6eaecc;
@@ -234,6 +231,7 @@
 }
 
 @media (max-width:767px){
+
 	#footer h5 {
     padding-left: 0;
     border-left: transparent;
@@ -242,5 +240,164 @@
 }
 }
 
+@media (max-width:767px){
+
+	html,body
+	{
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+	}
+
+	#cothead h1 {
+	font-family: 'Lora', serif;
+	font-size: 290%;
+	font-weight: 600;
+	padding: 70px 0;
+	word-spacing: 5px;
+	}
+
+	.brand {
+	position: relative;
+	text-align: center;
+    top: 220px;
+    font-family: 'Lora', serif;
+    font-size: 10px;
+    word-spacing: 5px;
+	}
+
+	#cothead h1 {
+	font-family: 'Lora', serif;
+	font-size: 340%;
+	font-weight: 600;
+	padding: 100px 0;
+	text-align: center;
+	}
+
+	#cothead p {
+	font-family: 'Lora', serif;
+	text-align: center;
+	font-style: italic;
+	font-size: 120%;
+	font-weight: 300;
+	padding-left: 50px;
+    }
+
+    #cotimage {
+		width: 0px;
+		height: 0px;
+	}
+
+	#features h1 {
+	font-family: 'Lora', serif;
+	font-size: 390%;
+	font-weight: 600;
+	word-spacing: 5px;
+	text-align: center;
+	}
+
+	#cd , #cd1 , #cd2 , #cd3{
+	overflow: hidden;
+	font-family: 'PT Sans', sans-serif;
+	width: 800px;
+	height: 600px;
+	}
+
+	#cd h4, #cd1 h4, #cd2 h4, #cd3 h4 {
+	color: #375E97;
+	font-weight: 600;
+	font-size: 290%;
+	text-align: center;
+	}
+
+	#cd p, #cd1 p, #cd2 p, #cd3 p {
+	margin-top: 20px; 
+	font-family: 'Fira Sans', sans-serif;
+	font-size: 15px;
+	word-spacing: 3px;
+	line-height: 30px;
+	color: grey;
+	text-align: center;
+	}
+
+	#cd img {
+	height: 300px;
+	width: 300px;
+	}
+
+	#cd2 img {
+	height: 300px;
+	width: 300px;
+	}
+
+	#cd1 img {
+	margin-top: 40px;
+	margin-right: 40px;
+	height: 250px;
+	width: 250px;
+	}
+
+	#cd3 img {
+	margin-top: 50px;
+	}
+
+	#mothercloth {
+		display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+	height: 320px;
+	width: 260px;
+	}
+
+	#quot {
+	margin-top: 40px;
+	font-size:78px;
+	color:#6eaecc;
+	}
+
+	#testi {
+	font-family: 'Bad Script', cursive;
+	font-size: 150%;
+	font-weight: 600;
+	word-spacing: 5px;
+	text-align: center;
+	}
+
+	#elise {
+	font-size: 0%;
+	}
+
+	#footer ul.social li{
+	padding: 5px 10px;
+	}
+
+	#footer ul.social li a i {
+    margin-right: 5px;
+	font-size:30px;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+	}
+
+	#footer ul.social li:hover a i {
+	font-size:40px;
+	margin-top:-10px;
+	}
+
+	#fixedimg {
+    background-color: #ccffff;
+    background-image: url("newcot.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 350px;
+    min-height: 350px;
+    filter: grayscale(70%);
+	}
+
+
+
+}
 
 
