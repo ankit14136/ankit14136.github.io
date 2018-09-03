@@ -25,7 +25,6 @@
   <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/css/now-ui-kit.min.css?v1.2.0" rel="stylesheet"/>
   <link href="https://cdn.rawgit.com/creativetimofficial/now-ui-kit/2e8e665f/assets/demo/demo.css" rel="stylesheet">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="style.css">
 
   <style>
     .navbar .navbar-nav .nav-link:not(.btn) i.fa{
@@ -35,6 +34,8 @@
       text-align: center;
       width: 21px;
     }
+
+    .navbar-left img{height:auto;width:auto;max-height:60px;max-width:180px}.page-header-image{background-image:url(26065012_baby-mother.jpg);min-height:100%;min-width:1024px;width:100%;height:auto;position:fixed;top:0;left:0;filter:grayscale(70%)}.brand{position:relative;text-align:left;float:left;top:220px;font-family:'Lora',serif;word-spacing:5px}#subscribe{color:white;background:transparent;border:2px solid white;margin:4px 2px;cursor:pointer;padding:16px 32px;font-size:20px;word-spacing:1px}#subscribe:visited{background-color:#6eaecc;color:white;border:3px solid #6eaecc}#subscribe:hover{background-color:#6eaecc;color:white;border:3px solid #6eaecc}#subscribe:active{background-color:#6eaecc;color:white;border:3px solid #6eaecc}@media (max-width:767px){html,body{margin:0;padding:0;overflow-x:hidden}.page-header-image{background-image:url(26065012_baby-mother.jpg);min-height:100%;min-width:1024px;width:100%;height:auto;position:fixed;top:0;left:0;filter:grayscale(70%)}.brand{position:relative;text-align:center;top:220px;font-family:'Lora',serif;font-size:10px;word-spacing:5px}}
   </style>
 
 </head>
@@ -186,6 +187,25 @@
             </div>  
         </div>
     </section>
+
+
+ <script type="text/javascript">
+   const loadStyleSheet = src => {
+    if(document.createStylesheet) {
+      document.createStylesheet(src)
+    } else {
+      const stylesheet = document.createElement('link');
+      stylesheet.href = src;
+      stylesheet.type = 'text/css';
+      stylesheet.rel = 'stylesheet';
+      document.getElementsByTagName('head')[0].appendChild(stylesheet);
+    }
+   }
+
+   window.onload = function() {
+    loadStyleSheet('./style2.css');
+   }
+ </script>
 
         
 </body>
