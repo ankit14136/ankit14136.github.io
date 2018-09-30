@@ -126,10 +126,39 @@ class Game{
 			game.createDummyEnvironment();
 		} );
 
+		let leftpress = false;
+		let rightpress = false;
+		let frontpress = false;
+		window.onkeydown = (e) => {
+
+			if(e.keyCode == 37)
+			{
+				leftpress = true;
+				if(rightpress && frontpress && !leftpress) this.playerControl(1,1);
+				else if( !rightpress && frontpress && leftpress) this.playerControl(1,-1);
+				else if(frontpress) this.playerControl(1,0);
+			}
+			else if(e.keyCode == 38)
+			{
+				frontpress = true;
+				if(rightpress && frontpress && !leftpress) this.playerControl(1,1);
+				else if( !rightpress && frontpress && leftpress) this.playerControl(1,-1);
+				else if(frontpress) this.playerControl(1,0);
+			}
+			else if(e.keyCode == 39)
+			{
+				rightpress = true;
+				if(rightpress && frontpress && !leftpress) this.playerControl(1,1);
+				else if( !rightpress && frontpress && leftpress) this.playerControl(1,-1);
+				else if(frontpress) this.playerControl(1,0);
+			}
+			
+		};
 		window.onkeyup = (e) => {
 			if(e.keyCode == 32)
 			{
 				game.action = "jump";
+				s.play();
 				s.play();
 				if(this.treasure)
 				{
@@ -150,10 +179,29 @@ class Game{
 				}
 				setTimeout(function(){ document.getElementById("message_fail").innerHTML = ''}, 3000);
 				this.treasure = false;
-
 			}
-
-		};
+			else if(e.keyCode == 38)
+			{
+				frontpress=false;
+				if(!frontpress && !leftpress && !rightpress) this.playerControl(0,0);
+				else if(frontpress && (!leftpress || !rightpress)) this.playerControl(1,0);
+			}
+			else if(e.keyCode == 37)
+			{
+				leftpress = false;
+				if(!frontpress && !leftpress && !rightpress) this.playerControl(0,0);
+				else if(frontpress && (!leftpress || !rightpress)) this.playerControl(1,0);
+			}
+			else if(e.keyCode == 39)
+			{
+				rightpress = false;
+				if(!frontpress && !leftpress && !rightpress) this.playerControl(0,0);
+				else if(frontpress && (!leftpress || !rightpress)) this.playerControl(1,0);
+			}
+			
+			
+		}
+		
 		this.renderer = new THREE.WebGLRenderer( { antialias: true } );
 		this.renderer.setPixelRatio( window.devicePixelRatio );
 		this.renderer.setSize( window.innerWidth, window.innerHeight );
@@ -421,6 +469,7 @@ class JoyStick{
 		
 		const forward = -(top - this.origin.top + this.domElement.clientHeight/2)/this.maxRadius;
 		const turn = (left - this.origin.left + this.domElement.clientWidth/2)/this.maxRadius;
+
 		
 		if (this.onMove!=undefined) this.onMove.call(this.game, forward, turn);
 	}

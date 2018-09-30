@@ -51,6 +51,19 @@
 				border: medium solid #696882;
 			}
 
+			#message_instruct{
+				position: absolute;
+				bottom: 10px;
+				left: 53%;
+				padding: 10px 20px 10px 20px;
+				font-family: 'Merienda', cursive;
+				font-size: 20px;
+				background-image: url('map.jpg');
+				color: #fff;
+				border-radius: 8px;
+				border: medium solid #696882;
+			}
+
 			#score{
 				position: absolute;
 				top: 10px;
@@ -71,6 +84,7 @@
 				color: #fff;
 				border-radius: 8px;
 				border: medium solid #696882;
+				fadein 3s
 			}
 
 			
@@ -84,7 +98,7 @@
 				    1px 1px 0 #fff;
 			}
 			#loading-image {position: absolute;z-index: 111} 
-			#display { position: absolute;z-index: 155 ; text-align: center;font-family: 'UnrealT'; font-size: 200px; text-align: center; left: 30px; top:20px; animation: fadein 3s;}
+			#display { position: absolute;z-index: 155 ; text-align: center;font-family: 'UnrealT'; font-size: 150px; text-align: center; left: 30px; top:20px; animation: fadein 3s}
 		</style>
 	</head>
 
@@ -112,6 +126,9 @@
 		<div>
 			<div id="score">Jewels Collected: 0</div>
 		</div>
+		<div>
+			<div id="message_instruct"></div>
+		</div>
 		
 		<script>
 				//document.getElementById("message_fail").style.display = "none";
@@ -127,13 +144,17 @@
 				    i++;
 				    setTimeout(typeWriter, speed);
 				  }
-				}
+				};
+				function newWriter() {
+					document.getElementById("message_instruct").innerHTML = 'use joystick or keyboard navigation keys to navigate';
+					
+				};
 
 				const game = new Game();
 				window.game = game;//For debugging only
 				window.onload = function(){ 
-					setTimeout(function(){ document.getElementById("loading").style.display = "none"; typeWriter();}, 6000);
-					
+					setTimeout(function(){ document.getElementById("loading").style.display = "none"; typeWriter(); newWriter()}, 6000);
+					setTimeout(function(){ document.getElementById("message_instruct").style.display = "none"},25000);
 				};
 		</script>
 	</body>
