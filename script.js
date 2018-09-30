@@ -1,0 +1,1 @@
+AOS.init();$(window).scroll(function(){$("#myfade").css("opacity",1-$(window).scrollTop()/250)});$(document).ready(function(){$('#quote-carousel').carousel({pause:!0,interval:4000,})})
