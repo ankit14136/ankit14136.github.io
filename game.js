@@ -380,7 +380,7 @@ class JoyStick{
 		if ('ontouchstart' in window){
 			this.domElement.addEventListener('touchstart', function(evt){ joystick.tap(evt); });
 		}else{
-			this.domElement.addEventListener('mousedown', function(evt){ joystick.tap(evt); });
+			this.domElement.addEventListener('pointerdown', function(evt){ joystick.tap(evt); });
 		}
 
 	}
@@ -396,8 +396,8 @@ class JoyStick{
 			document.ontouchmove = function(evt){ joystick.move(evt); };
 			document.ontouchend =  function(evt){ joystick.up(evt); };
 		}else{
-			document.onmousemove = function(evt){ joystick.move(evt); };
-			document.onmouseup = function(evt){ joystick.up(evt); };
+			document.onpointermove = function(evt){ joystick.move(evt); };
+			document.onpointerup = function(evt){ joystick.up(evt); };
 		}
 	}
 	
@@ -430,8 +430,8 @@ class JoyStick{
 			document.ontouchmove = null;
 			document.touchend = null;
 		}else{
-			document.onmousemove = null;
-			document.onmouseup = null;
+			document.onpointermove = null;
+			document.onpointerup = null;
 		}
 		this.domElement.style.top = `${this.origin.top}px`;
 		this.domElement.style.left = `${this.origin.left}px`;
