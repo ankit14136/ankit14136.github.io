@@ -59,6 +59,7 @@
 				font-family: 'Merienda', cursive;
 				font-size: 20px;
 				background-image: url('map.jpg');
+				text-align: center;
 				color: #fff;
 				border-radius: 8px;
 				border: medium solid #696882;
@@ -146,7 +147,7 @@
 				  }
 				};
 				function newWriter() {
-					document.getElementById("message_instruct").innerHTML = 'use joystick or keyboard navigation keys to navigate';
+					document.getElementById("message_instruct").innerHTML = 'Note : Drag joystick using mouse or navigation keys. To move forward, press forward key. To move right/left, press forward + right/left keys. Jewels are hidden in random chests. Find as many as you can!! ';
 					
 				};
 
@@ -154,7 +155,7 @@
 				window.game = game;//For debugging only
 				window.onload = function(){ 
 					setTimeout(function(){ document.getElementById("loading").style.display = "none"; typeWriter(); newWriter()}, 6000);
-					setTimeout(function(){ document.getElementById("message_instruct").style.display = "none"},25000);
+					setTimeout(function(){ document.getElementById("message_instruct").style.display = "none"},40000);
 				};
 		</script>
 	</body>
