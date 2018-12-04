@@ -1,0 +1,17 @@
+.btn {
+	display: flex;
+	flex-direction: column;
+	height: 24px;
+	width: 30px;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	box-sizing: border-box;
+	justify-content: space-around;
+}
+
+.line {
+	width: 30px;
+	height: 1px;
+}
