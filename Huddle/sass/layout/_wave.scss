@@ -1,0 +1,73 @@
+.wave {
+    background-color: $color-pale-blue;
+}
+
+.prewave__image {
+    display: block;
+}
+
+.postwave__image {
+    margin-top: -8rem;
+    display: block;
+}
+
+.description1 {
+    margin-left: 6rem;
+    height: 100%;
+    color: $color-dark-cyan;
+    &__heading {
+        display: block;
+        font-size: 1.3rem;
+        padding: 10rem 0 2rem 0;
+        &-h1 {
+            font-family: 'Poppins-Bold';
+        }
+    }
+
+    &__para {
+        display: block;
+        &-p {
+            font-family: $font-family-general;
+        }
+    }
+}
+
+.descimage1 {
+    height: 100%;
+    &__image {
+        display: block;
+        width: 80%;
+        padding: 3rem 0 0 4rem;
+    }
+}
+
+
+.description2 {
+    margin: 0 4rem;
+    height: 100%;
+    color: $color-dark-cyan;
+    &__heading {
+        display: block;
+        font-size: 1.3rem;
+        padding: 10rem 0 2rem 0;
+        &-h2 {
+            font-family: 'Poppins-Bold';
+        }
+    }
+
+    &__para {
+        display: block;
+        &-p {
+            font-family: $font-family-general;
+        }
+    }
+}
+
+.descimage2 {
+    height: 100%;
+    &__image {
+        display: block;
+        width: 90%;
+        padding: 3rem 0 0 6rem;
+    }
+}
