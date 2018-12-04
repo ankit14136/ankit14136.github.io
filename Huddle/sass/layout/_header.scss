@@ -1,0 +1,35 @@
+.myheader {
+    position: relative;
+    height: 100%;
+    &__logo {
+        position: absolute;
+        top: 3rem;
+        left: 7.3rem;
+        width: 10.8rem;
+
+    }
+
+    &__btn:link,
+    &__btn:visited {
+        font-size: .7rem;
+        position: absolute;
+        top: 3rem;
+        right: 7.2rem;
+        border-radius: 5rem;
+        text-decoration: none;
+        border: 1px solid $color-pink;
+        font-family: $font-family-general;
+        cursor: pointer;
+        padding: 0.6em 2.3em;
+        color: $color-pink;
+        text-align: center;
+        transition: all .3s;
+
+    }
+    &__btn:hover,
+    &__btn:active {
+        color: white;
+        background-color: $color-pink;
+    }
+
+}
