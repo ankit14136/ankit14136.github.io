@@ -1,0 +1,22 @@
+{
+  "name": "ankit14136.github.io",
+  "version": "1.0.0",
+  "description": "This coding challenge is all about **working with a designer and building a project for a client as if you just started a development company**. You will have to meet a deadline and finish a website (which you will be able to add to your portfolio) based on the design requirements of the client. A very valuable skill to learn. Let's get srated!",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ankit14136/ankit14136.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ankit14136/ankit14136.github.io/issues"
+  },
+  "homepage": "https://github.com/ankit14136/ankit14136.github.io#readme",
+  "dependencies": {
+    "node-sass": "^4.10.0"
+  }
+}

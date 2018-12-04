@@ -1,0 +1,9 @@
+.sec {
+	display: inline-block;
+	height: 709px;
+}
+
+.food {
+	box-sizing: border-box;
+	padding-top: 30px;
+}

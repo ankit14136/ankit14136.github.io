@@ -1,0 +1,22 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.body {
+    font-size: 62.5%;
+}
+
+.hero {
+    &__image {
+        margin: 0 auto;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        
+        &-svg {
+            width: 60rem;
+        }
+    }
+}
+
