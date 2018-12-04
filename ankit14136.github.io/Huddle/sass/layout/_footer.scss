@@ -1,0 +1,132 @@
+.footwave {
+    background-color: $color-dark-cyan;
+    padding-bottom: 15rem;
+    margin-bottom: -4rem;
+}
+
+.footdescription {
+    padding: 10rem 0 0 6rem;
+    &__logo {
+        width: 11.2rem;
+        display: block;
+    }
+
+    &__para {
+        display: block;
+        width: 18rem;
+        margin-top: 2rem;
+        color: $color-pale-blue;
+        font-family: $font-family-general;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    &__phone {
+        margin-top: 2rem;
+
+        &-icon {
+            display: inline-block;
+        }
+
+        &-number {
+            display: inline-block;
+            color: $color-pale-blue;
+            font-family: $font-family-general;
+            margin-left: 1rem;
+            font-size: 0.9rem;
+        }
+    }
+
+    &__email {
+        margin-top: 1rem;
+
+        &-icon {
+            display: inline-block;
+        }
+
+        &-id {
+            display: inline-block;
+            color: $color-pale-blue;
+            font-family: $font-family-general;
+            margin-left: 1rem;
+            font-size: 0.9rem;
+        }
+
+    }
+
+
+}
+
+.fab {
+    display: inline-block;
+    margin-top: 6rem;
+    color: $color-pale-blue;
+    font-size: 2.2rem;
+    padding-right: 1.2rem;
+}
+
+
+.newsletter {
+    padding: 10rem 0 0 6rem;
+    &__header {
+        font-weight: bold;
+        display: block;
+        font-family: 'OpenSans-Bold';
+        color: $color-pale-blue;
+        font-size: 1.6rem;
+    }
+
+    &__para {
+        display: block;
+        width: 21rem;
+        margin-top: 2rem;
+        color: $color-pale-blue;
+        font-family: $font-family-general;
+        font-size: 0.9rem;
+        line-height: 1.5rem;
+    }
+
+    &__input {
+        display: inline-block;
+        border-radius: 5px;
+        box-shadow: 0 1.5rem 2rem rgba(black,.2);
+        width: 20rem;
+        margin-right: 2rem;
+        height: 2rem;
+        margin-top: 2rem;
+        border: none;
+        outline: none;
+        padding: 0 1rem;
+        font-family: $font-family-general;
+
+    }
+
+
+}
+
+.btn-input {
+    &,
+    &:link,
+    &:visited {
+        display: inline-block;
+        border-radius: 5px;
+        text-decoration: none;
+        border: 1px solid $color-pink;
+        background-color: $color-pink;
+        color: white;
+        font-size: .7rem;
+        padding: 8px 16px;
+        font-family: $font-family-general;
+        box-shadow: 0 .5rem 1rem rgba(black,.2);
+        transition: all .4s;
+        outline: none;
+        cursor: pointer;
+        
+    }
+
+    &:hover,
+    &:active {
+        transform: scale(1.12); 
+    }
+
+}
