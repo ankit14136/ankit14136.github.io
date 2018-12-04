@@ -1,4 +1,8 @@
 node_modules/*
+<<<<<<< HEAD
+.idea/
+=======
 .idea/
 .DS_Store
 Huddle/.DS_Store
+>>>>>>> 49f9940a1c4776910cabce91f15e2413871a0958
